@@ -24,6 +24,32 @@
     <div class="container" ng-controller="TextCtrl">
       <h1 class="text-center">My Thoughts, Filtered</h1>
       <p>{{myText}}</p>
+
+      <h3>Capitalize</h3>
+      <p>{{"jane doe" | capitalize}}</p>
+      <p>{{"MiSSiSSiPPi" | capitalize}}</p>
+      <p>{{"the quick brown FOX!!" | capitalize}}</p>
+      <p>{{12345 | capitalize}}</p>
+
+      <h3>Ordinal</h3>
+      <p>{{1 | ordinal}}</p>
+      <p>{{453 | ordinal}}</p>
+      <p>{{5000 | ordinal}}</p>
+      <p>{{"taco" | ordinal}}</p>
+      <p>{{13 | ordinal}}</p>
+
+      <h3>Swear Filter</h3>
+      <p>{{"homework" | swearFilter}}</p>
+      <p>{{"homework" | swearFilter : "PG13"}}</p>
+      <p>{{"swagger" | swearFilter}}</p>
+      <p>{{"swagger" | swearFilter : "PG13"}}</p>
+      <p>{{"Josh" | swearFilter}}</p>
+      <p>{{"Josh" | swearFilter : "PG13"}}</p>
     </div>
   </body>
 </html>
+
+
+
+
+
